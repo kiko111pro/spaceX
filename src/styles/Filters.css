@@ -1,0 +1,47 @@
+.Filters {
+    width: 350px !important;
+    max-width: 100vw;
+    /* border: 1px solid red; */
+    margin: 10px auto;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.Filters h3{
+    text-align: center;
+}
+.years div{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 42px;
+}
+
+ .launch{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    padding: 0px 42px
+}
+
+.Filters button {
+    padding: 10px 30px ;
+    background-color: rgb(143, 224, 111);
+    border: 1px solid green;
+    border-radius: 3px;
+}
+@media only screen and (min-width: 768px) {
+    .Filters {
+        width: 290px !important
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    .Filters{
+        position: absolute;
+        left: 10px;
+        top: 0px;
+    }
+    
+}

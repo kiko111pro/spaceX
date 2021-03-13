@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{ useState } from 'react';
+import "./styles/App.css";
+import Filters from "./components/Filters"
+import Launches from './components/Launches';
 
 function App() {
+  const [data, setData] = useState()
+  // console.log(data);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Filters setData={setData}/>
+      <Launches data={data} />
+      <p className="credit">Developed by - Kshitiz</p>
     </div>
   );
 }

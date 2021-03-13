@@ -1,0 +1,20 @@
+.App {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.credit {
+    position: absolute;
+    bottom: -49px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 550px) {
+    .App{
+        flex-direction: row;
+        justify-content: space-between; 
+        /* text-align: left; */
+    }
+}
